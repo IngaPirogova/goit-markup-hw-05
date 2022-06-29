@@ -59,6 +59,7 @@ h1,h2,h3,h4,h5,h6, p {
 
 /*Шапка сайта*/
 .page-header { 
+    position: relative;
     border-bottom: 1px solid var(--border-header-color);
 }
 
@@ -117,6 +118,19 @@ h1,h2,h3,h4,h5,h6, p {
 
 .site-nav .link.current {
     color: var(--accent-color)
+}
+
+
+.link.current::after {
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: -1px;
+    width: 48px;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    text-align: center;
 }
         
 /*Ссылки-контакты*/
