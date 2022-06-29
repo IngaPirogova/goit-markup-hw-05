@@ -59,7 +59,7 @@ h1,h2,h3,h4,h5,h6, p {
 
 /*Шапка сайта*/
 .page-header { 
-    position: relative;
+    
     border-bottom: 1px solid var(--border-header-color);
 }
 
@@ -92,6 +92,7 @@ h1,h2,h3,h4,h5,h6, p {
 }
 
 .site-nav .item {
+   
     margin-right: 50px;    
 }
   
@@ -119,20 +120,22 @@ h1,h2,h3,h4,h5,h6, p {
 .site-nav .link.current {
     color: var(--accent-color)
 }
-
-
 .link.current::after {
     position: absolute;
     display: block;
     content: '';
     bottom: -1px;
-    width: 48px;
+    left: 0;
     height: 4px;
+    width: 100%;
     background-color: var(--accent-color);
     border-radius: 2px;
-    text-align: center;
 }
-        
+
+.site-nav > .item {
+    position: relative;
+}
+         
 /*Ссылки-контакты*/
 .link-contacts .link {
     display: flex;
