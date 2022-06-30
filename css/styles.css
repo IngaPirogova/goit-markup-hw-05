@@ -611,9 +611,9 @@ h1,h2,h3,h4,h5,h6, p {
 .overlay-card-image-text {    
     font-size: 18px;
     line-height: 1.56;  
-    color: var(--accent-text-color);      
-          
-}
+    color: var(--accent-text-color);   
+}    
+
 .overlay-card-image {  
     position: absolute;
     width: 100%;
